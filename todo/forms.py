@@ -3,13 +3,13 @@ from django import forms
 from todo.models import Task, Tag
 
 
-class DateInput(forms.DateInput):
-    input_type = "date"
+class DateTimeInput(forms.DateTimeInput):
+    input_type = "datetime-local"
 
 
 class TaskForm(forms.ModelForm):
     deadline = forms.DateTimeField(
-        widget=DateInput()
+        widget=DateTimeInput()
     )
     tags = forms.ModelMultipleChoiceField(
         queryset=Tag.objects.all(),
