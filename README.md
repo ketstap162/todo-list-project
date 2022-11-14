@@ -12,10 +12,10 @@ Home page:
 ![3](https://user-images.githubusercontent.com/72568844/201663591-352ca259-ef59-4259-8322-807961fae0be.png)
 
 ### Task create:
-![7](https://user-images.githubusercontent.com/72568844/201663801-d3d83c81-3b1f-4cb6-ac5c-6e8cfa9bb5c1.png)
-![8](https://user-images.githubusercontent.com/72568844/201663813-3da63b23-bc85-4b1c-8509-029d6bbd2959.png)
-![9](https://user-images.githubusercontent.com/72568844/201663828-1f5788e3-152f-4ee6-b87f-bed6543b9f76.png)
-![10](https://user-images.githubusercontent.com/72568844/201663837-7927e504-b769-4a65-ac33-b4dd145f67b6.png)
+![image](https://user-images.githubusercontent.com/72568844/201675496-12e42e7c-ab4e-4deb-822c-996000eaeec1.png)
+![image](https://user-images.githubusercontent.com/72568844/201675598-9be32450-ce18-4eac-8e59-4d14164a1dfb.png)
+![image](https://user-images.githubusercontent.com/72568844/201675632-c7a7fedc-b8c4-46f1-935c-e6aa667acd4c.png)
+![image](https://user-images.githubusercontent.com/72568844/201675684-ca5cc3b8-6833-4910-8e53-8e782685b211.png)
 
 ### Remarks and ordering:
 ![11](https://user-images.githubusercontent.com/72568844/201664046-17e36d0b-3521-4553-9323-4d98e4f2dbc5.png)
