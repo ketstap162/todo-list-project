@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Todo List | Tasks
+{% endblock %}
+
+{% block content %}
+  <h1>
+    Tasks
+    <div class="float-right d-flex align-items-center">
+      <a href="{% url 'todo:tasks-create' %}" class="btn btn-dark">Add</a>
+    </div>
+  </h1>
+  <hr>
+
+
+
+  {% if task_list %}
+    Oh, you have uncompleted tasks:
+    <div style="margin: 20px">
+      {% for task in task_list %}
+        <div style="border-radius: 20px; border: gray solid 2px; margin: 10px; padding: 20px">
+          <h5>
+            {{ task.content }}
+            {% if task.is_done %}
+              <div class="btn btn-success btn-sm" style="pointer-events: none">Done</div>
+            {% else %}
+              <div class="btn btn-danger btn-sm" style="pointer-events: none">Not done</div>
+
+            {% endif %}
+            <div class="float-right">
+              <a href="{% url 'todo:task-remark' pk=task.id %}" class="btn btn-secondary">Remark</a>
+            </div>
+          </h5>
+
+          <div>Created: {{ task.created_at }}</div>
+          <br>
+
+          <div>
+            <strong>Tags:</strong>
+            {% for tag in task.tags.all %}
+              <div class="badge badge-secondary">
+                {{ tag.name }}
+              </div>
+            {% endfor %}
+            <div class="float-right">
+            <a href="{% url 'todo:tasks-update' pk=task.id %}" class="btn btn-success btn-sm">Update</a>
+            <a href="{% url 'todo:tasks-delete' pk=task.id %}" class="btn btn-danger btn-sm">Delete</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>There are no tasks! Congratulations! You can rest!</p>
+  {% endif %}
+{% endblock %}

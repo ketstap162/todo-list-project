@@ -1,0 +1,25 @@
+<ul class="sidebar-nav list-group" style="list-style-type: none">
+  <li>
+    <a href="{% url 'todo:index' %}"
+       class="list-group-item list-group-item-action list-group-item-dark"
+       style="border-radius: 20px; margin-bottom: 5px">
+      Home
+    </a>
+  </li>
+
+  <li>
+    <a href="{% url 'todo:task-list' %}"
+       class="list-group-item list-group-item-action list-group-item-dark"
+       style="border-radius: 20px; margin-bottom: 5px">
+      Tasks
+    </a>
+  </li>
+
+  <li>
+    <a href="{% url 'todo:tag-list' %}"
+       class="list-group-item list-group-item-action list-group-item-dark"
+       style="border-radius: 20px; margin-bottom: 5px">
+      Tags
+    </a>
+  </li>
+</ul>
