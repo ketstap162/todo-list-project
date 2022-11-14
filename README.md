@@ -1,4 +1,4 @@
-# todo-list-project
+# Todo List project
 
 ## Demo
 
