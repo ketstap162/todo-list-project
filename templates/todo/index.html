@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Todo List | Home
+{% endblock %}
+
+{% block content %}
+  <h1>Hello! Have a good day!</h1>
+
+  <hr>
+
+  <h3>Statistics</h3>
+  Now you have:
+  <ul>
+    Now you have:
+    <li>{{ num_tasks }} task{{ num_tasks|pluralize }}</li>
+    <li>{{ num_tags }} tag{{ num_tags|pluralize }}</li>
+  </ul>
+
+  And also you have visited this site {{ num_visits }} time{{ num_visits|pluralize }}.
+{% endblock %}
